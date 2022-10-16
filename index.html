@@ -501,7 +501,7 @@ kishore@divaafoods.com</a></h4>
     <script src="js/owl.carousel.js"></script>
     <script src="js/custom.js"></script>
     <div id="eeee">
-        <script>
+        <!--<script>
             $(document).ready(function() {
                 //initialising fullpage.js in the jQuery way
                 $('#fullpage').fullpage({
@@ -520,6 +520,27 @@ kishore@divaafoods.com</a></h4>
                     $.fn.fullpage.moveSectionDown();
                 });
 
+            });
+        </script>-->
+        <script>
+            $(document).ready(function() {
+                //initialising fullpage.js in the jQuery way
+                $('#fullpage').fullpage({
+                    navigation: true,
+                    responsiveWidth: 900,
+            scrollHorizontally: true
+                });
+
+                // calling fullpage.js methods using jQuery
+                $('#moveSectionUp').click(function(e) {
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionUp();
+                });
+
+                $('#moveSectionDown').click(function(e) {
+                    e.preventDefault();
+                    $.fn.fullpage.moveSectionDown();
+                });
             });
         </script>
     </div>
